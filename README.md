@@ -17,7 +17,7 @@ npm run dev
 Панель доступна по адресу [http://127.0.0.1:5173](http://127.0.0.1:5173). Пример конфигурации направляет запросы `/api/v1` в локальный Nginx по HTTPS. При локальном сертификате, выпущенном через `make certs` в backend-репозитории, передайте его путь Node.js.
 
 ```bash
-NODE_EXTRA_CA_CERTS=../HexTravel-BD-Java/nginx/certs/cert.pem npm run dev
+NODE_EXTRA_CA_CERTS=/path/to/cert/cert.pem npm run dev
 ```
 
 Используйте существующую учётную запись с ролью `ADMIN`. Токены хранятся в памяти вкладки. После перезагрузки войдите снова и откройте сохранённый тур из каталога.
